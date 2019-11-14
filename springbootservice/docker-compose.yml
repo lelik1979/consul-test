@@ -1,0 +1,9 @@
+version: '3'
+services:
+  spring-boot-service:
+    build:
+      context: .
+      args:
+        JAR_FILE: target/spring-boot-service-0.1.0.jar
+    ports:
+      - "8080:8080"
